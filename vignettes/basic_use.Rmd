@@ -1,0 +1,37 @@
+---
+title: "basic_use"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{basic_use}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+# Quantiverse
+
+The intention of this package is to create a collection of convenience functions that make the use of R's `stats::quantile` more convenient for iterative calculation. 
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(quantiverse)
+```
+
+The basic functionality of `quantiverse::CalculateQuantilesWide` is to identify the quantile cutoff values for a user-specified number of quantiles and values to be separated. In this example, the values in the input numeric vector are being separated into tertiles, and the values denoting the cutoff values are returned in a wide-format tibble.
+
+```{r basic_functionality, echo=TRUE, include=TRUE, results="markup", warning=FALSE}
+CalculateQuantilesWide(c(1, 2, 3, 5, 10, 11, 15), ntiles = 3)
+```
+
+The default functionality is to remove `NA` calues from the input numeric vector.
+
+Verbose output can be specified by using the argument `verbose = TRUE`.
+
+```{r verbose_output, echo=TRUE, include=TRUE, results="markup", warning=FALSE}
+CalculateQuantilesWide(c(1, 2, 3, 5, 10, 11, 15), ntiles = 3, verobse = TRUE)
+```
