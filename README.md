@@ -1,6 +1,29 @@
-# QUANTIVERSE
 
-This package is developed as a learning exercise in partial completion of the STAT 547 course at the University of British Columbia
+# quantiverse
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+This package is developed as a learning exercise in partial completion of the STAT 547 course at the University of British Columbia.
+
+The goal of quantiverse is to aggregate convenience functions for working with R's `stats::quantile`.
+
+## Installation
+
+You can install the released version of quantiverse from [my github](https://github.com/ddtam) with:
+
+``` r
+devtools::install.packages("ddtam/quantiverse")
+```
+
+## Example
+
+This is a basic example which shows you how to use the main function, `CalculateQuantilesWide`:
+
+``` r
+library(quantiverse)
+CalculateQuantilesWide(c(1, 2, 5, 20, 22, 144))
+```
 
 ## Development
 
