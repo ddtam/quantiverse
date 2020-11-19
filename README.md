@@ -54,3 +54,7 @@ The steps taken to create this package is as follows:
 
 - Creates the minimal file structure necessary for `testthat` unit testing within the package
 - `tests/testthat/test-CalculateQuantilesWide.R` was modified manually to include basic unit tests for the `CalculateQuantilesWide` function
+
+## Code of Conduct
+
+Please note that the quantiverse project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
