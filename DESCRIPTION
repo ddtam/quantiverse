@@ -1,6 +1,6 @@
 Package: quantiverse
 Title: Calculate Quantiles In Various Formats
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
     person(given = "Derek",
            family = "Tam",
