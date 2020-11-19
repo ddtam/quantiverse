@@ -2,6 +2,7 @@
 # quantiverse
 
 <!-- badges: start -->
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
 This package is developed as a learning exercise in partial completion of the STAT 547 course at the University of British Columbia.
